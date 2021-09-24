@@ -1,0 +1,376 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+}
+
+
+/* start of main section  */
+header {
+    background: url('../images/bg-page.jpg') no-repeat center center/cover;
+    height: 100vh;
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.2);
+}
+
+.sign-in {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px 20px 30px;
+}
+
+.sign-in h1 {
+    color: red;
+    font-size: 2.5em;
+}
+
+.sign-in a {
+    background-color: red;
+    color: #fff;
+    width: 70px;
+    height: 30px;
+    padding: 2px 5px 2px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* font-weight: bold; */
+    border-radius: 5px;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 9em 0 0 0;
+}
+
+.text-container p:nth-child(1) {
+    font-weight: bold;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.text-container p:nth-child(2) {
+    font-size: 1.8em;
+    margin-bottom: 25px;
+}
+
+.text-container p:nth-child(3) {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+header form {
+    text-align: center;
+}
+
+header form input[type="text"] {
+    padding: 15px;
+    padding-right: 10%;
+    width: 24%;
+    margin-right: 0;
+    font-size: 18px;
+}
+
+header form input[type="submit"] {
+    padding: 15px;
+    width: 14%;
+    margin-left: 0;
+    font-size: 20px;
+    background-color: red;
+    color: #fff;
+    border: none;
+}
+
+/* End of main section  */
+
+
+/* start of Gallery section  */
+.box {
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    border-top: 5px solid #333;
+    border-bottom: 5px solid #333;
+}
+
+.box-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+}
+
+.box-text p:nth-child(1) {
+    font-size: 3em;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+.box-text p:nth-child(2) {
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+.box img {
+    height: 50%;
+    width: 40%;
+}
+
+.no-image {
+    justify-content: stretch;
+    padding: 40px 0;
+    padding-left: 20px;
+}
+
+.no-image p:nth-child(2) {
+    padding-left: 50px;
+}
+
+/* End of Gallery section  */
+
+
+/* start of question section  */
+.container-questions {
+    padding: 20px;
+    background-color: #000;
+    
+}
+
+.container-questions h1 {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.questions {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 20px;
+    margin: 10px 0;
+    font-size: 25px;
+}
+
+.para-watch{
+    text-align: center;
+    font-size: 1.2em;
+    margin: 50px 0 15px 0;
+}
+
+.container-questions form {
+    text-align: center;
+}
+
+.container-questions form input[type="text"] {
+    padding: 15px;
+    padding-right: 10%;
+    width: 50%;
+    margin-right: 0;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.container-questions form input[type="submit"] {
+    padding: 15px;
+    width: 30%;
+    margin-left: 0;
+    font-size: 20px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    margin-bottom: 40px;
+}
+
+/* footer */
+
+.footer-container {
+    width: 70%;
+    margin: auto;
+}
+
+footer {
+    border-top: 5px solid #333;
+    padding: 30px;
+    color: rgb(133, 131, 131);
+}
+
+footer .contact-us {
+    font-size: 14px;
+    margin: 40px 0 20px 0;
+}
+
+.flex-items {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.flex-items {
+    margin-bottom: 14px;
+}
+
+.items p {
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+
+
+footer .nigeria {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+@media(max-width:768px) {
+    /* header section */
+    header {
+        padding: 10px;
+    }
+
+    .sign-in h1 {
+        font-size: 2em;
+    }
+
+    .sign-in a {
+        padding: 5px;
+        height: 20px;
+        width: 50px;
+    }
+
+    .text-container p:nth-child(1) {
+        font-weight: bold;
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    
+    .text-container p:nth-child(2) {
+        font-size: 1.5em;
+        margin-bottom: 25px;
+    }
+    
+    .text-container p:nth-child(3) {
+        font-size: 1em;
+        margin-bottom: 20px;
+    }
+
+    header form input[type="text"] {
+        width: 90%;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        font-size: 13px;
+    }
+    
+    header form input[type="submit"] {
+        width: 30%;
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    /* End of header section */
+
+
+    /* start of gallery section */
+    
+    .box {
+        flex-direction: column;
+    }
+    .box-text {
+        width: 100%;
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+    .box img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .box-text p:nth-child(1) {
+        font-size: 2em;
+        font-weight: bold;
+        padding: 30px 0 15px 0;
+        text-align: center;
+    }
+    
+    .box-text p:nth-child(2) {
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .no-image {
+        padding: 40px 0;
+        overflow: hidden;
+    }
+    
+    .no-image p:nth-child(2) {
+        padding-left: 0;
+    }
+
+    .new-order img {
+        order: 2;
+    }
+
+    .new-order .box-text {
+        order: 1;
+    }
+
+    /* questions section */
+    .container {
+        width: 100%;
+        margin: 0;
+    }
+
+    .questions {
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 1.2em;
+    }
+
+    .container-questions h1 {
+        margin: 30px 0;
+        text-align: center;
+    }
+    
+
+    .container-questions form input[type="text"] {
+        width: 100%;
+        padding: 7px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        font-size: 13px;
+    }
+    
+    .container-questions form input[type="submit"] {
+        width: 30%;
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    /* footer */
+    .footer-container {
+        width: 90%;
+    }
+
+    .flex-items {
+        padding-right: 30px;
+    }
+    
+    .item-4 {
+        display: none;
+    }
+}
