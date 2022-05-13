@@ -17,12 +17,27 @@ body {
 
 /* start of main section  */
 header {
+    position: relative;
     background: url('../images/bg-page.jpg') no-repeat center center/cover;
     height: 100vh;
+    color: #fff;
     box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.2);
 }
 
+header:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+}
+
 .sign-in {
+    position: relative;
+    z-index: 2;
     display: flex;
     justify-content: space-between;
     padding: 20px 30px 20px 30px;
@@ -51,6 +66,8 @@ header {
 }
 
 .text-container {
+    position: relative;
+    z-index: 2;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -76,6 +93,8 @@ header {
 }
 
 header form {
+    position: relative;
+    z-index: 2;
     text-align: center;
 }
 
